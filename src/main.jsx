@@ -2,6 +2,8 @@ import { Button, MantineProvider } from "@mantine/core";
 import React from "react";
 import ReactDOM from "react-dom";
 import { MantineTheme } from "./config/theme.config";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -32,5 +34,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         test
       </Button>
     </MantineProvider>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
