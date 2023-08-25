@@ -7,7 +7,7 @@ import { MantineTheme } from "./config/theme.config";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <MantineProvider theme={MantineTheme}>
+    <MantineProvider withGlobalStyles withNormalizeCSS theme={MantineTheme}>
       <RouterProvider router={router} />
     </MantineProvider>
   </React.StrictMode>
